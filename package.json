@@ -1,0 +1,36 @@
+{
+    "name": "web_portfolio",
+    "version": "1.0.0",
+    "description": "This is custom system",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "server": "nodemon index.js",
+        "client": "npm run start --prefix client",
+        "dev": "concurrently \"npm run server\" \"npm run client\""
+    },
+    "author": "Yuryi Baravy <ybaravy@gmail.com>",
+    "license": "ISC",
+    "dependencies": {
+        "@emotion/react": "^11.11.4",
+        "@emotion/styled": "^11.11.5",
+        "@mui/material": "^5.15.15",
+        "axios": "^1.6.8",
+        "bcrypt": "^5.0.0",
+        "body-parser": "^1.20.2",
+        "config": "^3.3.1",
+        "dialogflow": "^1.2.0",
+        "express": "^4.19.2",
+        "express-validator": "^6.6.0",
+        "jsonwebtoken": "^8.5.1",
+        "materialize-css": "^1.0.0-rc.2",
+        "mongoose": "^5.9.23",
+        "react-chat-widget": "^3.1.4",
+        "react-router-dom": "^6.22.3"
+    },
+    "devDependencies": {
+        "@testing-library/react": "^15.0.2",
+        "concurrently": "^5.2.0",
+        "nodemon": "^2.0.4"
+    }
+}
